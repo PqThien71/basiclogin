@@ -1,0 +1,155 @@
+.homepage-wrapper{
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    display: flex;
+    background: #E5E5E5;
+    margin: 38px auto;
+}
+.homepage-wrapper__left{
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 100%;
+    background: #2F80ED;
+    padding: 64px 56px 31px 44px;
+}
+.left-title{
+    display: flex;
+}
+.title-text{
+    margin-left: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF
+}
+.sidebar-options,.logout-left{
+    margin: 156px 0px 0px 20px;
+}
+.logout-left{
+    display: flex;
+}
+.dashboard-title-left{
+    display: flex;
+}
+
+.setting-title-left{
+    display: flex;
+    margin-top: 44px;
+}
+
+.btn-sidebar{
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background-color: Transparent;
+    outline: none;
+    border: none;
+}
+.btn-sidebar:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.dashboard-icon{
+    margin-right: 12px;
+}
+.setting-icon{
+    margin-right: 12px;
+}
+.logout-icon{
+    margin-right: 12px;
+}
+.homePage-Wrapper__right{
+    position: relative;
+    width: calc(100% - 400px);
+    height: 100%;
+    background: #FFFFFF;
+    padding: 65px 170px 0px 73px;
+}
+.title-right{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #515151;
+}
+.view-infor-title,.pages-infor-title,.country-stage-infor-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+/* identical to box height */
+    color: #333333;
+}
+.pages-infor-right{
+    margin-top: 32px;
+    width: 100%;
+    display: block;
+}
+.btn-page-infor{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 65px;
+    display:flex;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    font-weight: 700;
+    font-size: 18px;
+    color: #4F4F4F;
+    justify-content: space-between;
+    padding-right: 16px;
+    align-items: center;
+}
+
+.pages-infor-right .btn-page-infor--firt{
+    margin-top: 16px;
+}
+.infor{
+    margin-left: 39px;
+}
+.infor-amount{
+    width: 36px;
+    text-align: left;
+}
+
+.view-counter-item{
+    display: flex;
+    width: 240px;
+    height: 150px;
+    background: #333333;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+.view-counter-number{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+.view-couter-unit{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+.body-right{
+    margin-top: 36px;
+    width: 810px;
+}
+.view-counter-wrapper{
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.mt-24{
+    margin-top: 24px !important;
+}
