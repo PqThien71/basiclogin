@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/preset.css" />
+		<link rel="stylesheet" href="../css/styleSetting.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<title>Setting</title>
+	</head>
+	<body>
+        <div class="setting-wrapper">
+            <div class="setting-wrapper__left">
+				<div class="sidebar-header">
+					<div class="left-title">
+						<img src="/image/icon.svg" class="title-icon" />
+						<p class="title-text">Simple Analytics</p>
+					</div>
+					<div class="sidebar-options">
+						<div class="dashboard-title-left">
+							<img src="/image/dashboard.svg" class="dashboard-icon" />
+							<button class="btn-sidebar" id="btn-dashboard">Dashboard</button>
+						</div>
+						<div class="setting-title-left">
+							<img src="/image/setting.svg" class="setting-icon" />
+							<button class="btn-sidebar" id="btn-setting">Setting</button>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar-logout">
+					<div class="logout-left">
+						<img src="/image/logout.svg" class="logout-icon" />
+						<button class="btn-sidebar" id="btn-logout">Logout</button>
+					</div>
+				</div>
+        </div>
+        <div class="setting-wrapper__right">
+            <p class="title-page">Settings</p>
+            <div class="dashboard-option-wrapper">
+                <div class="dashboard-title mt-48">Dashboard Options</div>
+                <div class="dashboard-content">
+                    <label class="dashboard-option mt-24" >Analystics Home Views
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="dashboard-option mt-24" >Enable Cron job
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="dashboard-option mt-24" >Show pages
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="dashboard-option mt-24" >Auto clear cache
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="dashboard-option mt-24" >Show country / state
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="dashboard-option mt-24" >Enable CI/CD
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>   
+                </div>
+                <div class="save-dashboard">
+                    <button class="save-btn mt-24" id="save-dashboard-btn">Save</button>
+                </div>
+            </div>
+            <div class="password-modify-wrapper">
+                <p class="password-modify-title mt-48">Change your password</p>
+                <input class="new-password-input mt-24" placeholder="New password" id="new-password-input">
+                <input class="new-password-input mt-24" placeholder="Retype new password" id="re-new-password-input">
+                <div class="save-dashboard">
+                    <button class="save-btn" style="margin-top: 38px;" id="save-mdf-password-btn">Save</button>
+                </div>
+            </div>
+        </div>
+        <script src="/setting.js"></script>
+    </body>
+</html>

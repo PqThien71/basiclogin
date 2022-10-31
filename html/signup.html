@@ -4,9 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login</title>
+		<title>Signup</title>
 		<link rel="stylesheet" href="../css/preset.css" />
-		<link rel="stylesheet" href="../css/styleLogin.css" />
+		<link rel="stylesheet" href="../css/styleSignup.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -31,6 +31,16 @@
 						placeholder="Password"
 						id="password-input" />
 					<div class="icon-password-hidden" id="password-toggle">
+						<img src="/image/icon-eye.svg" id="icon-password-hidden" />
+					</div>
+				</div>
+				<div class="password-wrapper">
+					<input
+						type="password"
+						class="password-input"
+						placeholder="Retype Password"
+						id="retype-password-input" />
+					<div class="icon-password-hidden" id="retype-password-toggle">
 						<img src="/image/icon-eye.svg" id="icon-password-hidden" />
 					</div>
 				</div>
@@ -61,7 +71,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="/main.js"></script>
+		<script src="/signUp.js"></script>
 		<script>
 			const btnHiddenPassword = document.getElementById("password-toggle");
 			const iconImg = document.getElementById("icon-password-hidden");

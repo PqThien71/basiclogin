@@ -1,7 +1,10 @@
 const btnLogin = document.getElementById("btn-login");
 btnLogin.addEventListener('click', handleClickLogin);
+const btnSignup = document.getElementById("btn-signup");
+btnSignup.addEventListener('click', handleClickSignup);
 const usernameInputElement = document.getElementById("username-input");
 const passwordInputElement  = document.getElementById("password-input");
+const errorMsg = document.getElementById("error-validate-login")
 const database = [
   {"username":"phamthien","password":"123"},
   {"username":"phamthien1","password":"1234"},
@@ -12,21 +15,28 @@ function handleClickLogin(){
   let usernameInput = usernameInputElement.value 
   let passwordInput = passwordInputElement.value
   if(!usernameInput || !passwordInput){
-    alert("username or pasword required")
+    errorMsg.style.display = "block"
+    errorMsg.innerHTML = "Account or password cannot be blank"
   }
   else if(usernameInput.length < 3 || passwordInput.length < 3 ){
-    alert("username or pasword length must be more than 3")
+    errorMsg.style.display = "block"
+    errorMsg.innerHTML = "Account or password is too short"
   }
   else {
     const result = queryLogin(usernameInput,passwordInput)
     if (!result){
-      alert("username or pasword incorrect")
+      errorMsg.style.display = "block"
+      errorMsg.innerHTML = "Incorrect account or password"
     }
     else{
       location.href = "/html/homepage.html"
     }
   }
 
+}
+
+function handleClickSignup(){
+  location.href = "/html/signup.html"
 }
 
 function queryLogin(usernameInput,passwordInput){
@@ -36,3 +46,4 @@ function queryLogin(usernameInput,passwordInput){
     return result
   }
 
+  

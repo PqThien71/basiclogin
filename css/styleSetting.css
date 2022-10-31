@@ -1,0 +1,175 @@
+.setting-wrapper{
+    margin: 38px auto;
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    display: flex;
+    background: #E5E5E5;
+    margin: 38px auto;
+}
+.setting-wrapper__left{
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 100%;
+    background: #2F80ED;
+    padding: 64px 56px 31px 44px;
+}
+.setting-wrapper__right{
+    position: relative;
+    width: calc(100% - 400px);
+    height: 100%;
+    background: #FFFFFF;
+    padding: 64px 361px 138px 48px;
+}
+
+.left-title{
+    display: flex;
+}
+.title-text{
+    margin-left: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF
+}
+.logout-left{
+    display: flex;
+}
+.dashboard-title-left{
+    display: flex;
+}
+
+.setting-title-left{
+    display: flex;
+    margin-top: 44px;
+}
+.sidebar-options,.logout-left{
+    margin: 156px 0px 0px 20px;
+}
+
+.btn-sidebar{
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background-color: Transparent;
+    outline: none;
+    border: none;
+}
+.btn-sidebar:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.setting-title-left{
+    display: flex;
+    margin-top: 44px;
+}
+
+.dashboard-icon, .setting-icon,.logout-icon {
+    margin-right: 12px;
+}
+
+.dashboard-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dashboard-option{
+    flex-grow: 1;
+    width: calc(50% - 24px);
+}
+.dashboard-option {
+    display: block;
+    margin-left: 1px;
+    padding-left: 24px;
+    height: 24px;
+    display: flex;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #515151;
+  }
+/* Hide the browser's default checkbox */
+  .dashboard-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    box-sizing: border-box;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background: #FFFFFF;
+    border: 1px solid #828282;
+  }
+
+.title-page{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #515151;
+}
+.dashboard-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #515151;
+}
+.save-btn{
+    width: 120px;
+    height: 52px;
+    background: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+
+}
+.password-modify-wrapper{
+    display: block;
+}
+.new-password-input{
+    box-sizing: border-box;
+    width: 400px;
+    height: 75px;
+    background: #FFFFFF;
+    border: 1px solid #828282;
+    outline: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+}
+.password-modify-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #515151;
+}
+.new-password-input::placeholder{
+    position: absolute;
+    left: 29px;
+    top: 24px;
+    color: #CCCCCC;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.mt-24{
+    margin-top: 24px !important;
+}
+.mt-48{
+    margin-top: 48px !important;
+}
